@@ -9,8 +9,14 @@ fn index() -> &'static str {
     "Hello, World!"
 }
 
+#[get("/<name>")]
+fn greet(name: &str) -> String {
+    format!("Hello, {}!", name)
+}
+
 /// Launches the Rocket web server with the provided routes.
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
+    rocket::build()
+        .mount("/", routes![index, greet])
 }

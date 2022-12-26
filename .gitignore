@@ -25,3 +25,4 @@ frontend/build
 
 # BACKEND
 backend/target
+**cargo.log*
