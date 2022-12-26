@@ -8,10 +8,10 @@ The frontend of this application is built with TypeScript and React, while the b
 ## Running the Application
 To run the application, you will need to have the following dependencies installed:
 
-  TypeScript
-  React
-  Rust
-  MySQL
+|  TypeScript
+|  React
+|  Rust
+|  MySQL
   
 You will also need to set up a MySQL database and provide the necessary credentials in the backend configuration.
 
