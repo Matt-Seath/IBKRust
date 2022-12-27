@@ -27,4 +27,3 @@ frontend/build
 # BACKEND
 target
 cargo.log
-Rocket.toml
