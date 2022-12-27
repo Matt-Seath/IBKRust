@@ -5,18 +5,20 @@ extern crate rocket;
 ///
 /// Returns a static string with the message "Hello, World!".
 #[get("/")]
-fn index() -> &'static str {
+async fn index() -> &'static str {
     "Hello, World!"
 }
 
 #[get("/<name>")]
-fn greet(name: &str) -> String {
+async fn greet(name: &str) -> String {
     format!("Hello, {}!", name)
 }
 
 /// Launches the Rocket web server with the provided routes.
-#[launch]
-fn rocket() -> _ {
+#[rocket::main]
+async fn main() {
     rocket::build()
         .mount("/", routes![index, greet])
+        .launch()
+        .await;
 }
