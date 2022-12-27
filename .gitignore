@@ -24,5 +24,6 @@ frontend/build
 **yarn-error.log*
 
 # BACKEND
-backend/target
-**cargo.log*
+target
+cargo.log
+Rocket.toml
