@@ -20,5 +20,7 @@ async fn main() {
     rocket::build()
         .mount("/", routes![index, greet])
         .launch()
-        .await;
+        .await
+        .map_err(|err| println!("{:?}", err))
+        .ok();
 }
