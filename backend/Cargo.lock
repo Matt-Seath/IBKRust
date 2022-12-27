@@ -949,6 +949,7 @@ dependencies = [
 name = "ibkrust"
 version = "0.1.0"
 dependencies = [
+ "lazy_static",
  "mysql",
  "reqwest",
  "rocket",
