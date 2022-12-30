@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+diesel = { version = "2.0.0", features = ["mysql"] }
 rocket_dyn_templates = { version = "0.1.0-rc.2", features = ["handlebars", "tera"] }
 rocket = { version = "0.5.0-rc.2", features = ["json"] }
 reqwest = { version = "0.11.13", features = ["json"] }
